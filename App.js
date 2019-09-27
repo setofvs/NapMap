@@ -1,18 +1,33 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-// import { MapView} from react-native-MSG
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  TextInput,
+  Dimensions,
+  Image
+} from "react-native";
+import MapView from "react-native-maps";
+import { Marker } from "react-native-maps";
+import * as Permissions from "expo-permissions";
 
-export default function App() {
-  const [outputText, setOutputText] = useState("Hello Rory!");
-  return (
-    <View style={styles.container}>
-      <Text>{outputText}</Text>
-      <Button
-        title="Change Text"
-        onPress={() => setOutputText("Hello Bobsti!")}
-      />
-    </View>
-  );
+export default class App extends React.Component {
+  state = {
+    // latitude: null,
+    // longitude: null,
+    // locations: locations
+  };
+
+  async componentDidMount() {
+    const { status } = await Permissions.getAsync(Permissions.LOCATION);
+    if (status !== "granted") {
+      const response = await Permissions.askAsync(Permissions.LOCATION);
+    }
+  }
+  render() {
+    return <MapView style={{ flex: 1 }}></MapView>;
+  }
 }
 
 const styles = StyleSheet.create({
