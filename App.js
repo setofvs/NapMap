@@ -14,8 +14,8 @@ import * as Permissions from "expo-permissions";
 
 export default class App extends React.Component {
   state = {
-    // latitude: null,
-    // longitude: null,
+    latitude: null,
+    longitude: null
     // locations: locations
   };
 
@@ -24,9 +24,41 @@ export default class App extends React.Component {
     if (status !== "granted") {
       const response = await Permissions.askAsync(Permissions.LOCATION);
     }
+
+    navigator.geolocation.getCurrentPosition(
+      ({ coords: { latitude, longitude } }) =>
+        this.setState({ latitude, longitude }, () =>
+          console.log("State:", this.state)
+        )
+    );
+    error => console.log("Error:", error);
   }
+
   render() {
-    return <MapView style={{ flex: 1 }}></MapView>;
+    const { latitude, longitude } = this.state;
+    if (latitude) {
+      return (
+        <MapView
+          provider="google"
+          mapType="mutedStandard"
+          showsUserLocation
+          // followsUserLocation
+          showsMyLocationButton
+          style={{ flex: 1 }}
+          initialRegion={{
+            latitude: 40.712772,
+            longitude: -74.006058,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421
+          }}
+        ></MapView>
+      );
+    }
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <Text>We need your permission!</Text>
+      </View>
+    );
   }
 }
 
