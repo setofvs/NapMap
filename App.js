@@ -36,13 +36,14 @@ export default class App extends React.Component {
     const {
       stations: [sampleStation]
     } = this.state;
+    console.log("THIS IS THE SAMPLE STATION: ", this.state);
 
     this.setState(
       {
         desLatitude: sampleStation.coords.latitude,
         desLongitude: sampleStation.coords.longitude
       },
-      console.log(this.state),
+      // console.log(this.state),
       this.mergeCoords
     );
   }
@@ -61,12 +62,12 @@ export default class App extends React.Component {
   async getDirections(startLoc, desLoc) {
     try {
       const res = await fetch(
-        `https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&key=AIzaSyDtL-Gqej9DslO6FZU49rSS8PFOwNUmFM4`
-      );
+        `https://maps.googleapis.com/maps/api/directions/json?&mode=transit&transit_mode=subway&origin=${startLoc}&destination=${desLoc}&key=AIzaSyDtL-Gqej9DslO6FZU49rSS8PFOwNUmFM4`
+      ); //Takes starting location as current user location, ending location as Flushing Main St 7 station and uses subway ONLY
       const resJson = await res.json();
-      console.log("RESJSON HERE", resJson);
+      // console.log("RESJSON HERE", resJson);
       const response = resJson.routes[0];
-      console.log("RESPONSE HERE", response);
+      // console.log("RESPONSE HERE", response);
       const distanceTime = response.legs[0];
       const distance = distanceTime.distance.text;
       const time = distanceTime.duration.text;
@@ -84,6 +85,20 @@ export default class App extends React.Component {
       console.log("Error: ", error);
     }
   }
+
+  renderMarkers = () => {
+    const { stations } = this.state;
+    return (
+      <View>
+        {stations.map((station, idx) => {
+          const {
+            coords: { latitude, longitude }
+          } = station;
+          return <Marker key={idx} coordinate={{ latitude, longitude }} />;
+        })}
+      </View>
+    );
+  };
 
   render() {
     const { latitude, longitude, coords } = this.state;
@@ -103,6 +118,7 @@ export default class App extends React.Component {
             longitudeDelta: 0.00421
           }}
         >
+          {this.renderMarkers()}
           <MapView.Polyline
             strokeWidth={2}
             strokeColor="purple"
