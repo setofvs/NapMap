@@ -1,0 +1,222 @@
+[
+  {
+    "line": "7",
+    "name": "Flushing-Main Street",
+    "address": "39-15 Main St Flushing, NY 11354",
+    "coords": {
+      "latitude": 40.759833,
+      "longitude": -73.829881
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipNjZoPZlNqk93oK5mVaFQk7RPu4VqkEEwCRF4_k=w408-h306-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Mets-Willets Point",
+    "address": "19-121 Roosevelt Ave Corona, NY 11368",
+    "coords": {
+      "latitude": 40.754666,
+      "longitude": -73.845436
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipOdFo1FcXSkIfaOQeh7UyqpoLimWN5jHLludAtR=w408-h306-k-no"
+  },
+  {
+    "line": "7",
+    "name": "111 St",
+    "address": "111 St Queens, NY 11368",
+    "coords": {
+      "latitude": 40.751707,
+      "longitude": -73.855321
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipNUFVRfjMjnL-5s21f6AzazlRX8i-DLxhPV1l0q=w426-h240-k-no"
+  },
+  {
+    "line": "7",
+    "name": "103 Street-Corona Plaza",
+    "address": "40-12 National St Corona, NY 11368",
+    "coords": {
+      "latitude": 40.749861,
+      "longitude": -73.862682
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipMRai2MAanJVCjA067tVa9-GQR1RnC1pEYN01Tw=w426-h240-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Junction Boulevard",
+    "address": "Junction Blvd Queens, NY 11368",
+    "coords": {
+      "latitude": 40.749228,
+      "longitude": -73.86934
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipMUmE3hhnCPn54IXKgq7pmJYQia33ZqoZxrUMJ0=w408-h544-k-no"
+  },
+  {
+    "line": "7",
+    "name": "90 Street-Elmhurst Avenue",
+    "address": "3768-3774 90th St Jackson Heights, NY 11372",
+    "coords": {
+      "latitude": 40.748459,
+      "longitude": -73.876531
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipPyMdRmiyZN2WlQWaJNQSct9dTIVo2bvw85fs_q=w408-h331-k-no"
+  },
+  {
+    "line": "7",
+    "name": "82 Street-Jackson Heights",
+    "address": "37-59-37-57 82nd St Jackson Heights, NY 11372",
+    "coords": {
+      "latitude": 40.747741,
+      "longitude": -73.883939
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipMvz_BZGScVoUXJn2D90KxKyg6uSih4kbPple3j=w408-h306-k-no"
+  },
+  {
+    "line": "7",
+    "name": "74 Street-Broadway",
+    "address": "Roosevelt Ave & 74th Street, Queens, NY 11372",
+    "coords": {
+      "latitude": 40.746756,
+      "longitude": -73.890997
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipMlSYyrr8VZGJb_f5PQmJRBT2e3DLqN5OlCyVIm=w408-h306-k-no"
+  },
+  {
+    "line": "7",
+    "name": "69 Street Fisk Ave Station",
+    "address": "3923-3823 69th St Woodside, NY 11377",
+    "coords": {
+      "latitude": 40.746362,
+      "longitude": -73.896311
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipPjEw-zakbozkD0hnVhDYAyFH35SBcDXiPpKXTH=w408-h254-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Woodside-61 Street",
+    "address": "61 St-Woodside Queens, NY 11377",
+    "coords": {
+      "latitude": 40.745747,
+      "longitude": -73.902897
+    },
+    "image_url": "http://i.dtinews.vn/images/editor/images/ngovan/12018/19/Big/pho-di-bo-bui-vien-anh-hoang-trieuimg8663-1516201119295.jpg"
+  },
+  {
+    "line": "7",
+    "name": "52 Street-Lincoln Ave Station",
+    "address": "52 St - Lincoln Av Station Queens, NY 11377",
+    "coords": {
+      "latitude": 40.744203,
+      "longitude": -73.9123
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipOMdHZOBysIsc6R8UtMFndkhJXr-On0mUMQ4j0R=w408-h306-k-no"
+  },
+  {
+    "line": "7",
+    "name": "46 Street - Bliss St Station",
+    "address": "46 St-Bliss St Station Queens, NY 11104",
+    "coords": {
+      "latitude": 40.743178,
+      "longitude": -73.918244
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipMtpRxugNUz6lcQagAjyA2hiVoKQSPjKTi4o6JU=w408-h544-k-no"
+  },
+  {
+    "line": "7",
+    "name": "40 Street-Lowery St",
+    "address": "40 Queens Blvd Sunnyside, NY 11104",
+    "coords": {
+      "latitude": 40.743926,
+      "longitude": -73.924241
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipNm1d6K3MmpUBvkEld_3yFid_Fbm4a_-whOql1f=w426-h240-k-no"
+  },
+  {
+    "line": "7",
+    "name": "33 Street-Rawson St Station",
+    "address": "Queens Blvd Long Island City, NY 11101",
+    "coords": {
+      "latitude": 40.744711,
+      "longitude": -73.931225
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipPybpfTFRUOG4lzHPIDxb3AiqiU4GI8hIVWV-8Q=w408-h306-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Queensboro Plaza",
+    "address": "Queensboro Plaza Queens, NY 11101",
+    "coords": {
+      "latitude": 40.750643,
+      "longitude": -73.940212
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipOyR44ajKPbJ7zk-IO-Ia_5hJhvZp5xLQ6b5XdJ=w408-h725-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Court Sq",
+    "address": "Court Square Station Queens, NY 11101",
+    "coords": {
+      "latitude": 40.746901,
+      "longitude": -73.945272
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipNlnYSx0A8fh5rzqECDAFe2Vbnq2RlrsYZ2EIXl=w408-h305-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Hunters Point Avenue",
+    "address": "Hunters Point Av Queens, NY 11101",
+    "coords": {
+      "latitude": 40.742451,
+      "longitude": -73.948172
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipPPYMZaZFiBwefHVJfCNMlVlieLAUP-xHwANy2X=w408-h305-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Vernon Boulevard-Jackson Avenue",
+    "address": "49-17 Vernon Blvd Long Island City, NY 11101",
+    "coords": {
+      "latitude": 40.742896,
+      "longitude": -73.95372
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipNfBsGy71QiKt_oOce3-4ydxwPSg0fnYLK4EpQn=w423-h240-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Grand Central-42 Street",
+    "address": "Grand Central - 42 St New York, NY 10017",
+    "coords": {
+      "latitude": 40.752258,
+      "longitude": -73.977177
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipPAk80eAHRdOHmUUvMjWdE-bhxYH3utvkcAAh0=w408-h319-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Bryant Park New York, NY",
+    "address": "11-29 W 42nd St New York, NY 10036",
+    "coords": {
+      "latitude": 40.75411,
+      "longitude": -73.982286
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipNw1ypelkzLm4sj9j2tfxxNy92xCLMteJzrHY86=w408-h725-k-no"
+  },
+  {
+    "line": "7",
+    "name": "Times Square-42 Street",
+    "address": "Times Sq - 42 St New York, NY 10018",
+    "coords": {
+      "latitude": 40.755898,
+      "longitude": -73.987055
+    },
+    "image_url": "https://lh5.googleusercontent.com/p/AF1QipN7WAJd6XJ-5SA6dsPJx0Kjl74Lo74iEFBk2lNa=w408-h273-k-no"
+  },
+  {
+    "line": "7",
+    "name": "34 St-Hudson Yards",
+    "address": "34 street-Hudson yards 528 W 34th St, New York, NY 10001",
+    "coords": {
+      "latitude": 40.75508,
+      "longitude": -74.001
+    },
+    "image_url": "http://blog.tstc.org/wp-content/uploads/2015/09/34th-hudson-yards-station-777x437.jpg"
+  }
+]
