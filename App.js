@@ -13,6 +13,7 @@ import { Marker } from "react-native-maps";
 import * as Permissions from "expo-permissions";
 import Polyline from "@mapbox/polyline";
 const stations = require("./stations.json");
+const { width, height } = Dimensions.get("screen");
 
 export default class App extends React.Component {
   state = {
@@ -86,6 +87,20 @@ export default class App extends React.Component {
     }
   }
 
+  onMarkerPress = station => () => {
+    const {
+      coords: { latitude, longitude }
+    } = station;
+    this.setState(
+      {
+        destination: station,
+        desLatitude: latitude,
+        desLongitude: longitude
+      },
+      this.mergeCoords
+    );
+  };
+
   renderMarkers = () => {
     const { stations } = this.state;
     return (
@@ -94,14 +109,27 @@ export default class App extends React.Component {
           const {
             coords: { latitude, longitude }
           } = station;
-          return <Marker key={idx} coordinate={{ latitude, longitude }} />;
+          return (
+            <Marker
+              key={idx}
+              coordinate={{ latitude, longitude }}
+              onPress={this.onMarkerPress(station)}
+            />
+          );
         })}
       </View>
     );
   };
 
   render() {
-    const { latitude, longitude, coords } = this.state;
+    const {
+      latitude,
+      longitude,
+      coords,
+      destination,
+      time,
+      distance
+    } = this.state;
     if (latitude) {
       return (
         <MapView
@@ -112,17 +140,46 @@ export default class App extends React.Component {
           showsMyLocationButton
           style={{ flex: 1 }}
           initialRegion={{
-            latitude: 40.705084,
-            longitude: -74.009162,
-            latitudeDelta: 0.00922,
-            longitudeDelta: 0.00421
+            // latitude: 40.705084,
+            // longitude: -74.009162,
+            latitude,
+            longitude,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.042
           }}
         >
+          <View
+            style={{
+              width,
+              paddingTop: 10,
+              alignSelf: "center",
+              alignItems: "center",
+              height: height * 0.1,
+              backgroundColor: "white",
+              justifyContent: "flex-end"
+            }}
+          >
+            <Text style={{ fontWeight: "bold" }}>Estimated Time: {time}</Text>
+            <Text style={{ fontWeight: "bold" }}>
+              Estimated Distance: {distance}
+            </Text>
+          </View>
           {this.renderMarkers()}
           <MapView.Polyline
             strokeWidth={2}
             strokeColor="purple"
             coordinates={coords}
+          />
+          <Image
+            source={{ uri: destination && destination.image_url }}
+            style={{
+              flex: 1,
+              width: width * 0.95,
+              alignSelf: "center",
+              height: height * 0.3,
+              position: "absolute",
+              bottom: height * 0.09
+            }}
           />
         </MapView>
       );
